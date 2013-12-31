@@ -20,8 +20,15 @@
 
 -(void)bindToModel:(NSObject*)model
 {
+	
+	if ([self.fieldName rangeOfString:@"."].location == NSNotFound){
+		self.text = [model valueForKey:self.fieldName];
+	} else {
+		self.text = [model valueForKeyPath:self.fieldName];
+	}
+	
 	// Bind from model to text field
-	self.text = [model valueForKey:self.fieldName];
+	
 	
 	if(self.currentModel != nil) {
 		[self.currentModel removeObserver:self forKeyPath:self.fieldName];
