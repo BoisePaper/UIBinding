@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.authors       = { "Peter Davidson" => "PeterDavidson@Boiseinc.com", "Joel Sonoda" => "JoelSonoda@Boiseinc.com" }
 
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/pdavidson/UIBinding.git",:tag=>"v0.1.1" }
+  s.source       = { :git => "https://github.com/pdavidson/UIBinding.git",:tag=>"v0.1.2" }
 
 
 
