@@ -62,6 +62,7 @@
 		4F4600551873308F00F6659C /* UIBoundLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundLabel.m; sourceTree = "<group>"; };
 		4F4600561873308F00F6659C /* UIBoundTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBoundTextField.h; sourceTree = "<group>"; };
 		4F4600571873308F00F6659C /* UIBoundTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundTextField.m; sourceTree = "<group>"; };
+		4F46005C1873452600F6659C /* UIBinding.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIBinding.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		4F46001C1873293D00F6659C = {
 			isa = PBXGroup;
 			children = (
+				4F46005C1873452600F6659C /* UIBinding.podspec */,
 				4F46002A1873293D00F6659C /* Classes */,
 				4F46003E1873293D00F6659C /* UIBindingTests */,
 				4F4600271873293D00F6659C /* Frameworks */,
@@ -353,7 +355,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/UIBinding.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIBinding/UIBinding-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/UIBinding-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -365,7 +367,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/UIBinding.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIBinding/UIBinding-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/UIBinding-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -382,7 +384,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIBinding/UIBinding-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/UIBinding-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -403,7 +405,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIBinding/UIBinding-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/UIBinding-Prefix.pch";
 				INFOPLIST_FILE = "UIBindingTests/UIBindingTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
@@ -429,6 +431,7 @@
 				4F46004A1873293D00F6659C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F46004B1873293D00F6659C /* Build configuration list for PBXNativeTarget "UIBindingTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +440,7 @@
 				4F46004D1873293D00F6659C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
