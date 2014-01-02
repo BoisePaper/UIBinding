@@ -20,12 +20,13 @@
 
 -(void)bindToModel:(NSObject*)model
 {
-	
-	if ([self.fieldName rangeOfString:@"."].location == NSNotFound){
-		self.text = [model valueForKey:self.fieldName];
-	} else {
-		self.text = [model valueForKeyPath:self.fieldName];
+	NSString * name = self.fieldName;
+	if ([name rangeOfString:@"."].location == NSNotFound){
+		name = [@"self." stringByAppendingString:name];
 	}
+	
+	self.text = [model valueForKeyPath:name];
+
 	
 	// Bind from model to text field
 	
