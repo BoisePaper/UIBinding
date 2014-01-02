@@ -25,16 +25,9 @@
 	if ([name rangeOfString:@"."].location == NSNotFound){
 		name = [@"self." stringByAppendingString:name];
 	}
+	NSObject * value = [model valueForKeyPath:name];
+	[self setTextWithModelValue:value];
 	
-	NSString *_format = self.format;
-	if(self.format == nil)
-	{
-		_format = @"%@";
-	}
-	
-	self.text = [NSString stringWithFormat:_format, [model valueForKeyPath:name]];
-	
-	//Hello World
 	
 	// Bind from model to text field
 	
@@ -44,6 +37,25 @@
 	}
 	self.currentModel = model;
 	[model addObserver:self forKeyPath:self.fieldName options:NSKeyValueObservingOptionNew context:NULL];
+}
+
+
+-(void) setTextWithModelValue:(NSObject *) modelValue
+{
+//	if(self.format != nil && [modelValue isKindOfClass:[NSNumber class]])
+//	{
+//		NSNumberFormatter nf = [[NSNumberFormatter alloc] init];
+//		nf.
+//	}
+//	else if (self.format !=nil && [modelValue isKindOfClass:[NSDate class]])
+//	{
+//		
+//	}
+//	else
+//	{
+		self.text = [NSString stringWithFormat:@"%@", modelValue];
+//	}
+	
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
