@@ -16,6 +16,7 @@
 
 @synthesize fieldName;
 @synthesize currentModel;
+@synthesize format;
 
 
 -(void)bindToModel:(NSObject*)model
@@ -25,7 +26,13 @@
 		name = [@"self." stringByAppendingString:name];
 	}
 	
-	self.text = [NSString stringWithFormat:@"%@", [model valueForKeyPath:name]];
+	NSString *_format = self.format;
+	if(self.format == nil)
+	{
+		_format = @"%@";
+	}
+	
+	self.text = [NSString stringWithFormat:_format, [model valueForKeyPath:name]];
 	
 	//Hello World
 	

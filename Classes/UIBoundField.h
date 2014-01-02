@@ -11,4 +11,8 @@
 @protocol UIBoundField <NSObject>
 @property (nonatomic, strong) NSString* fieldName;
 -(void) bindToModel:(NSObject *) model;
+
+@optional
+@property (nonatomic, strong) NSString * format;
+
 @end
