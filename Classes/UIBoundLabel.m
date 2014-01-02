@@ -25,8 +25,9 @@
 		name = [@"self." stringByAppendingString:name];
 	}
 	
-	self.text = [model valueForKeyPath:name];
-
+	self.text = [NSString stringWithFormat:@"%@", [model valueForKeyPath:name]];
+	
+	//Hello World
 	
 	// Bind from model to text field
 	
