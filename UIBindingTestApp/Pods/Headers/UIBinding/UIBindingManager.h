@@ -1,0 +1,1 @@
+../../UIBinding/Classes/UIBindingManager.h
