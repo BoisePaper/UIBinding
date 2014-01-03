@@ -19,18 +19,13 @@
 		4F46005A1873308F00F6659C /* UIBoundLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4600551873308F00F6659C /* UIBoundLabel.m */; };
 		4F46005B1873308F00F6659C /* UIBoundTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4600571873308F00F6659C /* UIBoundTextField.m */; };
 		4F46005E1873608900F6659C /* UIBoundLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F46005D1873608900F6659C /* UIBoundLabelTests.m */; };
-		4F4600F81875E63300F6659C /* UIBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F46004E1873308F00F6659C /* UIBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4600F91875E63300F6659C /* UIBindingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F46004F1873308F00F6659C /* UIBindingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4600FA1875E63300F6659C /* UIBoundDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600511873308F00F6659C /* UIBoundDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4600FB1875E63300F6659C /* UIBoundField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600531873308F00F6659C /* UIBoundField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4600FC1875E63300F6659C /* UIBoundLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600541873308F00F6659C /* UIBoundLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4600FD1875E63300F6659C /* UIBoundTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600561873308F00F6659C /* UIBoundTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4601051875E9F500F6659C /* UIBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F46004E1873308F00F6659C /* UIBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4601061875E9F500F6659C /* UIBindingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F46004F1873308F00F6659C /* UIBindingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4601071875E9F500F6659C /* UIBoundDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600511873308F00F6659C /* UIBoundDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4601081875E9F500F6659C /* UIBoundField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600531873308F00F6659C /* UIBoundField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4601091875E9F500F6659C /* UIBoundLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600541873308F00F6659C /* UIBoundLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F46010A1875E9F500F6659C /* UIBoundTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4600561873308F00F6659C /* UIBoundTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50FD4CA318761BF40053ADA5 /* UIBoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */; };
+		50FD4CA418761BF40053ADA5 /* UIBoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */; };
+		50FD4CA518761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */; };
+		50FD4CA618761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */; };
+		50FD4CA818761D730053ADA5 /* UIBoundSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA718761D730053ADA5 /* UIBoundSwitchTests.m */; };
+		50FD4CAA1876F9F90053ADA5 /* UIBoundSegmentedControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA91876F9F90053ADA5 /* UIBoundSegmentedControlTests.m */; };
+		50FD4CAC187704510053ADA5 /* SegmentedControlTesting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +72,13 @@
 		4F4600571873308F00F6659C /* UIBoundTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundTextField.m; sourceTree = "<group>"; };
 		4F46005C1873452600F6659C /* UIBinding.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIBinding.podspec; sourceTree = "<group>"; };
 		4F46005D1873608900F6659C /* UIBoundLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundLabelTests.m; sourceTree = "<group>"; };
-		4F4600651875D94F00F6659C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50FD4C9F18761BF40053ADA5 /* UIBoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBoundSwitch.h; sourceTree = "<group>"; };
+		50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSwitch.m; sourceTree = "<group>"; };
+		50FD4CA118761BF40053ADA5 /* UIBoundSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBoundSegmentedControl.h; sourceTree = "<group>"; };
+		50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSegmentedControl.m; sourceTree = "<group>"; };
+		50FD4CA718761D730053ADA5 /* UIBoundSwitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSwitchTests.m; sourceTree = "<group>"; };
+		50FD4CA91876F9F90053ADA5 /* UIBoundSegmentedControlTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSegmentedControlTests.m; sourceTree = "<group>"; };
+		50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControlTesting.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +130,6 @@
 				4F4600281873293D00F6659C /* Foundation.framework */,
 				4F4600361873293D00F6659C /* XCTest.framework */,
 				4F4600391873293D00F6659C /* UIKit.framework */,
-				4F4600651875D94F00F6659C /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +137,10 @@
 		4F46002A1873293D00F6659C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				50FD4C9F18761BF40053ADA5 /* UIBoundSwitch.h */,
+				50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */,
+				50FD4CA118761BF40053ADA5 /* UIBoundSegmentedControl.h */,
+				50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */,
 				4F46004E1873308F00F6659C /* UIBinding.h */,
 				4F46004F1873308F00F6659C /* UIBindingManager.h */,
 				4F4600501873308F00F6659C /* UIBindingManager.m */,
@@ -165,6 +169,8 @@
 			children = (
 				4F4600441873293D00F6659C /* UIBindingTests.m */,
 				4F46005D1873608900F6659C /* UIBoundLabelTests.m */,
+				50FD4CA718761D730053ADA5 /* UIBoundSwitchTests.m */,
+				50FD4CA91876F9F90053ADA5 /* UIBoundSegmentedControlTests.m */,
 				4F46003F1873293D00F6659C /* Supporting Files */,
 			);
 			path = UIBindingTests;
@@ -175,40 +181,12 @@
 			children = (
 				4F4600401873293D00F6659C /* UIBindingTests-Info.plist */,
 				4F4600411873293D00F6659C /* InfoPlist.strings */,
+				50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		4F4600F71875E61B00F6659C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F4600F81875E63300F6659C /* UIBinding.h in Headers */,
-				4F4600F91875E63300F6659C /* UIBindingManager.h in Headers */,
-				4F4600FA1875E63300F6659C /* UIBoundDatePicker.h in Headers */,
-				4F4600FB1875E63300F6659C /* UIBoundField.h in Headers */,
-				4F4600FC1875E63300F6659C /* UIBoundLabel.h in Headers */,
-				4F4600FD1875E63300F6659C /* UIBoundTextField.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F4601041875E9EC00F6659C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F4601051875E9F500F6659C /* UIBinding.h in Headers */,
-				4F4601061875E9F500F6659C /* UIBindingManager.h in Headers */,
-				4F4601071875E9F500F6659C /* UIBoundDatePicker.h in Headers */,
-				4F4601081875E9F500F6659C /* UIBoundField.h in Headers */,
-				4F4601091875E9F500F6659C /* UIBoundLabel.h in Headers */,
-				4F46010A1875E9F500F6659C /* UIBoundTextField.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4F4600241873293D00F6659C /* UIBinding */ = {
@@ -218,7 +196,6 @@
 				4F4600211873293D00F6659C /* Sources */,
 				4F4600221873293D00F6659C /* Frameworks */,
 				4F4600231873293D00F6659C /* CopyFiles */,
-				4F4601041875E9EC00F6659C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -236,7 +213,6 @@
 				4F4600311873293D00F6659C /* Sources */,
 				4F4600321873293D00F6659C /* Frameworks */,
 				4F4600331873293D00F6659C /* Resources */,
-				4F4600F71875E61B00F6659C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -256,11 +232,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Peter Davidson";
-				TargetAttributes = {
-					4F4600341873293D00F6659C = {
-						TestTargetID = 4F4600241873293D00F6659C;
-					};
-				};
 			};
 			buildConfigurationList = 4F4600201873293D00F6659C /* Build configuration list for PBXProject "UIBinding" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -268,7 +239,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 4F46001C1873293D00F6659C;
 			productRefGroup = 4F4600261873293D00F6659C /* Products */;
@@ -287,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4600431873293D00F6659C /* InfoPlist.strings in Resources */,
+				50FD4CAC187704510053ADA5 /* SegmentedControlTesting.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +271,8 @@
 				4F46005B1873308F00F6659C /* UIBoundTextField.m in Sources */,
 				4F4600591873308F00F6659C /* UIBoundDatePicker.m in Sources */,
 				4F46005A1873308F00F6659C /* UIBoundLabel.m in Sources */,
+				50FD4CA618761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */,
+				50FD4CA418761BF40053ADA5 /* UIBoundSwitch.m in Sources */,
 				4F4600581873308F00F6659C /* UIBindingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,8 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FD4CA318761BF40053ADA5 /* UIBoundSwitch.m in Sources */,
+				50FD4CAA1876F9F90053ADA5 /* UIBoundSegmentedControlTests.m in Sources */,
 				4F4600451873293D00F6659C /* UIBindingTests.m in Sources */,
+				50FD4CA818761D730053ADA5 /* UIBoundSwitchTests.m in Sources */,
 				4F46005E1873608900F6659C /* UIBoundLabelTests.m in Sources */,
+				50FD4CA518761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

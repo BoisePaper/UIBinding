@@ -28,9 +28,14 @@
 	return self;
 }
 
++(void) bindModel:(NSObject*)model toView:(UIView*)view
+{
+	[[UIBindingManager alloc] initWithView:view model:model];
+}
+
 -(void) bindModelToView
 {
-	[self forEverySubviewOf:_view perform:^(UIView *vw) {
+	[self for:_view andAllSubviewsPerform:^(UIView *vw) {
 		if([vw conformsToProtocol:@protocol(UIBoundField)]) {
 			UIView<UIBoundField>* bf = (UIView<UIBoundField>*) vw;
 			[bf bindToModel:_model];
@@ -39,11 +44,11 @@
 
 }
 
--(void)forEverySubviewOf:(UIView*)view perform:(void(^) (UIView* view)) block
+-(void)for:(UIView*)view andAllSubviewsPerform:(void(^) (UIView* view)) block
 {
+	block(view);
 	for(UIView* vw in [view subviews]) {
-		block(vw);
-		[self forEverySubviewOf:vw perform:[block copy]];
+		[self for:vw andAllSubviewsPerform:[block copy]];
 	}
 }
 
