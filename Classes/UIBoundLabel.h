@@ -10,5 +10,5 @@
 #import "UIBoundField.h"
 
 @interface UIBoundLabel : UILabel<UIBoundField>
-
+@property NSString * negativeFormat;
 @end

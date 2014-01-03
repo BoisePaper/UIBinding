@@ -10,6 +10,10 @@
 
 @interface UIBoundLabel()
 @property(strong)NSObject * currentModel;
+
+- (NSString *) formattedStringFromNumber:(NSNumber*) modelValue;
+-(NSString *) negativeFormatValue;
+
 @end
 
 @implementation UIBoundLabel
@@ -44,21 +48,47 @@
 {
 	if(self.format != nil && [modelValue isKindOfClass:[NSNumber class]])
 	{
-		NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
-		nf.positiveFormat = self.format;
-		
-		self.text = [nf stringFromNumber:(NSNumber*)modelValue];
-		
+		self.text = [self formattedStringFromNumber:(NSNumber*)modelValue];
 	}
 	else if (self.format !=nil && [modelValue isKindOfClass:[NSDate class]])
 	{
-		
+		self.text = [self formattedStringFromDate:(NSDate* )modelValue];
 	}
 	else
 	{
 		self.text = [NSString stringWithFormat:@"%@", modelValue];
 	}
 
+}
+
+-(NSString*) formattedStringFromDate:(NSDate*)modelValue
+{
+	NSDateFormatter * df = [[NSDateFormatter alloc]init];
+	df.dateFormat = self.format;
+	return [df stringFromDate:modelValue];
+}
+
+- (NSString *) formattedStringFromNumber:(NSNumber*) modelValue
+{
+	NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+	nf.positiveFormat = self.format;
+	nf.negativeFormat = [self negativeFormatValue];
+
+	
+	return [nf stringFromNumber:(NSNumber*)modelValue];
+	
+}
+
+-(NSString *) negativeFormatValue
+{
+	if (self.negativeFormat != nil)
+	{
+		return self.negativeFormat;
+	}
+	else
+	{
+		return [@"-" stringByAppendingString:self.format];
+	}
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
