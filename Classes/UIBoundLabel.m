@@ -42,20 +42,23 @@
 
 -(void) setTextWithModelValue:(NSObject *) modelValue
 {
-//	if(self.format != nil && [modelValue isKindOfClass:[NSNumber class]])
-//	{
-//		NSNumberFormatter nf = [[NSNumberFormatter alloc] init];
-//		nf.
-//	}
-//	else if (self.format !=nil && [modelValue isKindOfClass:[NSDate class]])
-//	{
-//		
-//	}
-//	else
-//	{
+	if(self.format != nil && [modelValue isKindOfClass:[NSNumber class]])
+	{
+		NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+		nf.positiveFormat = self.format;
+		
+		self.text = [nf stringFromNumber:(NSNumber*)modelValue];
+		
+	}
+	else if (self.format !=nil && [modelValue isKindOfClass:[NSDate class]])
+	{
+		
+	}
+	else
+	{
 		self.text = [NSString stringWithFormat:@"%@", modelValue];
-//	}
-	
+	}
+
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
