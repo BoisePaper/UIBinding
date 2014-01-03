@@ -90,7 +90,7 @@
 	}
 }
 
--(void)dealloc
+-(void)dealloc	
 {
 	[self.currentModel removeObserver:self forKeyPath:self.fieldName];
 }
