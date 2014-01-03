@@ -25,7 +25,7 @@
 		50FD4CA618761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */; };
 		50FD4CA818761D730053ADA5 /* UIBoundSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA718761D730053ADA5 /* UIBoundSwitchTests.m */; };
 		50FD4CAA1876F9F90053ADA5 /* UIBoundSegmentedControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA91876F9F90053ADA5 /* UIBoundSegmentedControlTests.m */; };
-		50FD4CAC187704510053ADA5 /* SegmentedControleTesting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FD4CAB187704510053ADA5 /* SegmentedControleTesting.xib */; };
+		50FD4CAC187704510053ADA5 /* SegmentedControlTesting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSegmentedControl.m; sourceTree = "<group>"; };
 		50FD4CA718761D730053ADA5 /* UIBoundSwitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSwitchTests.m; sourceTree = "<group>"; };
 		50FD4CA91876F9F90053ADA5 /* UIBoundSegmentedControlTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSegmentedControlTests.m; sourceTree = "<group>"; };
-		50FD4CAB187704510053ADA5 /* SegmentedControleTesting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControleTesting.xib; sourceTree = "<group>"; };
+		50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControlTesting.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +181,7 @@
 			children = (
 				4F4600401873293D00F6659C /* UIBindingTests-Info.plist */,
 				4F4600411873293D00F6659C /* InfoPlist.strings */,
-				50FD4CAB187704510053ADA5 /* SegmentedControleTesting.xib */,
+				50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4600431873293D00F6659C /* InfoPlist.strings in Resources */,
-				50FD4CAC187704510053ADA5 /* SegmentedControleTesting.xib in Resources */,
+				50FD4CAC187704510053ADA5 /* SegmentedControlTesting.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
