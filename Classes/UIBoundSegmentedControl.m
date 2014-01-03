@@ -42,7 +42,7 @@
 
 -(void)bindToModel:(NSObject *)model
 {
-	NSString* code = [model valueForKey:self.fieldName];
+	NSString* code = [model valueForKeyPath:self.fieldName];
 	NSNumber* index = indexByCode[code];
 	if(index == nil) {
 		index = @-1;

@@ -39,7 +39,7 @@
 
 -(void)bindToModel:(NSObject *)model
 {
-	NSNumber* isOn = [model valueForKey:self.fieldName];
+	NSNumber* isOn = [model valueForKeyPath:self.fieldName];
 	self.on = [isOn boolValue];
 	
 	if(self.currentModel != nil) {

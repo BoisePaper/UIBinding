@@ -45,7 +45,7 @@
 	
 	UIBoundSwitch* sw = [[UIBoundSwitch alloc] initWithCoder:nil];
 	sw.fieldName = @"testProp";
-	model.testProp = NO;
+	[model setValue:[NSNumber numberWithBool:NO] forKey:sw.fieldName];
 	
 	[UIBindingManager bindModel:model toView:sw];
 	
@@ -58,7 +58,7 @@
 	UIView* container = [[UIView alloc] init];
 	
 	UIBoundSwitch* sw = [[UIBoundSwitch alloc] initWithCoder:nil];
-	sw.fieldName = @"testProp";
+	sw.fieldName = @"self.testProp";
 	[container addSubview:sw];
 	
 	model.testProp = YES;
