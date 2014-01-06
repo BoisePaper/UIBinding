@@ -1,4 +1,0 @@
-UIBinding
-=========
-
-UIBinding Cocoa Pod
