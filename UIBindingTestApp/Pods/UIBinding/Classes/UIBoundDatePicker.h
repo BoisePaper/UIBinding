@@ -1,5 +1,5 @@
 //
-//  UIBoundLabel.h
+//  UIBoundDatePicker.h
 //  BoisePaperMobile
 //
 //  Created by Peter Davidson on 12/27/13.
@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "UIBoundField.h"
 
-@interface UIBoundLabel : UILabel<UIBoundField>
+@interface UIBoundDatePicker : UIDatePicker<UIBoundField>
+
 @end
