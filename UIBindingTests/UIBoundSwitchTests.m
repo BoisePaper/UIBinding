@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "UIBinding.h"
 #import "UIBoundSwitch.h"
 
 @interface TestModel:NSObject
@@ -23,61 +22,29 @@
 
 @implementation UIBoundSwitchTest
 
-- (void)testTestBindingInitiallyFalseToContainerView
+- (void)testBindingInitiallyFalse
 {
     TestModel* model = [[TestModel alloc] init];
-	UIView* container = [[UIView alloc] init];
 	
 	UIBoundSwitch* sw = [[UIBoundSwitch alloc] initWithCoder:nil];
 	sw.fieldName = @"testProp";
-	[container addSubview:sw];
-	
 	model.testProp = NO;
 	
-	[UIBindingManager bindModel:model toView:container];
+	[sw bindToModel:model];
 	
 	XCTAssertEqual(sw.on, model.testProp, @"The switch value should be the same as the model upon initial binding");
 }
 
-- (void)testTestBindingInitiallyFalseToViewDirectly
+- (void)testBindingInitiallyTrue
 {
     TestModel* model = [[TestModel alloc] init];
-	
-	UIBoundSwitch* sw = [[UIBoundSwitch alloc] initWithCoder:nil];
-	sw.fieldName = @"testProp";
-	[model setValue:[NSNumber numberWithBool:NO] forKey:sw.fieldName];
-	
-	[UIBindingManager bindModel:model toView:sw];
-	
-	XCTAssertEqual(sw.on, model.testProp, @"The switch value should be the same as the model upon initial binding");
-}
-
-- (void)testTestBindingInitiallyTrueToContainerView
-{
-    TestModel* model = [[TestModel alloc] init];
-	UIView* container = [[UIView alloc] init];
 	
 	UIBoundSwitch* sw = [[UIBoundSwitch alloc] initWithCoder:nil];
 	sw.fieldName = @"self.testProp";
-	[container addSubview:sw];
 	
 	model.testProp = YES;
 	
-	[UIBindingManager bindModel:model toView:container];
-	
-	XCTAssertEqual(sw.on, model.testProp, @"The switch value should be the same as the model upon initial binding");
-}
-
-- (void)testTestBindingInitiallyTrueToViewDirectly
-{
-    TestModel* model = [[TestModel alloc] init];
-	
-	UIBoundSwitch* sw = [[UIBoundSwitch alloc] initWithCoder:nil];
-	sw.fieldName = @"testProp";
-	
-	model.testProp = YES;
-	
-	[UIBindingManager bindModel:model toView:sw];
+	[sw bindToModel:model];
 	XCTAssertEqual(sw.on, model.testProp, @"The switch value should be the same as the model upon initial binding");
 }
 
@@ -90,7 +57,7 @@
 	
 	model.testProp = YES;
 	
-	[UIBindingManager bindModel:model toView:sw];
+	[sw bindToModel:model];
 	XCTAssertEqual(sw.on, model.testProp, @"The switch value should be the same as the model upon initial binding");
 	
 	model.testProp = NO;
@@ -106,7 +73,7 @@
 	
 	model.testProp = YES;
 	
-	[UIBindingManager bindModel:model toView:sw];
+	[sw bindToModel:model];
 	XCTAssertEqual(sw.on, model.testProp, @"The switch value should be the same as the model upon initial binding");
 	
 	[sw setOn:NO];

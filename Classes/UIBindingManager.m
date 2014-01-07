@@ -7,38 +7,31 @@
 //
 
 #import "UIBindingManager.h"
-#import "UIBoundField.h"
+#import "UIBoundView.h"
 
-@implementation UIBindingManager {
-	NSObject * _model;
-	UIView * _view;
-}
-
+@implementation UIBindingManager
 
 -(id)initWithView:(UIView *)view model:(NSObject *)model
 {
 	if (self = [super init])
 	{
-		_model = model;
-		_view = view;
-		
-		[self bindModelToView];
-		
+		[self bindModel:model toView:view];
 	}
 	return self;
 }
 
 +(void) bindModel:(NSObject*)model toView:(UIView*)view
 {
-	[[UIBindingManager alloc] initWithView:view model:model];
+	UIBindingManager* instance = [[UIBindingManager alloc] init];
+	[instance bindModel:model toView:view];
 }
 
--(void) bindModelToView
+-(void) bindModel: (NSObject*)model toView:(UIView*)view
 {
-	[self for:_view andAllSubviewsPerform:^(UIView *vw) {
-		if([vw conformsToProtocol:@protocol(UIBoundField)]) {
-			UIView<UIBoundField>* bf = (UIView<UIBoundField>*) vw;
-			[bf bindToModel:_model];
+	[self for:view andAllSubviewsPerform:^(UIView *vw) {
+		if([vw conformsToProtocol:@protocol(UIBoundView)]) {
+			UIView<UIBoundView>* bf = (UIView<UIBoundView>*) vw;
+			[bf bindToModel:model];
 		}
 	}];
 

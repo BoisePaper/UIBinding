@@ -11,5 +11,5 @@
 @interface UIBindingManager : NSObject
 
 -(id) initWithView:(UIView*) view model:(NSObject*) model;
-+(void) bindModel:(NSObject*)model toView:(UIView*)view;
+-(void) bindModel:(NSObject*)model toView:(UIView*)view;
 @end

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol UIBoundField <NSObject>
+@protocol UIBoundView <NSObject>
 @property (nonatomic, strong) NSString* fieldName;
 -(void) bindToModel:(NSObject *) model;
 

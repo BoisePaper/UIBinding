@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIBoundField.h"
+#import "UIBoundView.h"
 
-@interface UIBoundTextField : UITextField<UIBoundField>
+@interface UIBoundTextField : UITextField<UIBoundView>
 
 @end
