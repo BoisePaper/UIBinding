@@ -40,6 +40,15 @@
 -(void)for:(UIView*)view andAllSubviewsPerform:(void(^) (UIView* view)) block
 {
 	block(view);
+	if([view isKindOfClass:[UITableView class]]) {
+		for(NSInteger section = 0; section < [((UITableView*) view) numberOfSections]; section++) {
+			for(NSInteger row = 0; row <[((UITableView*) view) numberOfRowsInSection:section]; row++) {
+				UITableViewCell* cell = [((UITableView*) view) cellForRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:section]];
+				[self for:cell andAllSubviewsPerform:[block copy]];
+			}
+		}
+	}
+	
 	for(UIView* vw in [view subviews]) {
 		[self for:vw andAllSubviewsPerform:[block copy]];
 	}
