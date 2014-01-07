@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIBoundField.h"
+#import "UIBoundView.h"
 
-@interface UIBoundSwitch : UISwitch<UIBoundField>
+@interface UIBoundSwitch : UISwitch<UIBoundView>
 @end

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIBoundField.h"
+#import "UIBoundView.h"
 
-@interface UIBoundDatePicker : UIDatePicker<UIBoundField>
+@interface UIBoundDatePicker : UIDatePicker<UIBoundView>
 
 @end

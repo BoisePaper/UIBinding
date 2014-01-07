@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB04E579022A49CEB4468DB0"
-               BuildableName = "libPods-UIBinding.a"
-               BlueprintName = "Pods-UIBinding"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "4F4600241873293D00F6659C"
+               BuildableName = "libUIBinding.a"
+               BlueprintName = "UIBinding"
+               ReferencedContainer = "container:UIBinding.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4F4600341873293D00F6659C"
+               BuildableName = "UIBindingTests.xctest"
+               BlueprintName = "UIBindingTests"
+               ReferencedContainer = "container:UIBinding.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

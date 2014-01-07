@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIBoundField.h"
+#import "UIBoundView.h"
 
-@interface UIBoundSegmentedControl : UISegmentedControl<UIBoundField>
+@interface UIBoundSegmentedControl : UISegmentedControl<UIBoundView>
 @property NSString* codes;
 @end

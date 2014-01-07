@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "UIBoundSegmentedControl.h"
-#import "UIBinding.h"
 
 @interface UIBoundSegmentedControlTestsModel : NSObject
 @property NSString* testProp;
@@ -41,7 +40,7 @@
 	UIBoundSegmentedControl* instance = [self findSegmentedControlIn:container];
 	instance.fieldName = @"testProp";
 	
-	[UIBindingManager bindModel:model toView:instance];
+	[instance bindToModel:model];
 	
 	XCTAssertEqual(index, instance.selectedSegmentIndex, @"The selected segment index should be the same as the corresponding codes index");
 	XCTAssertEqualObjects(self.codes[index], [instance titleForSegmentAtIndex:instance.selectedSegmentIndex], @"The label at the selected index should match the code at that index.");
@@ -56,7 +55,7 @@
 	UIBoundSegmentedControl* instance = [self findSegmentedControlIn:container];
 	instance.fieldName = @"testProp";
 	
-	[UIBindingManager bindModel:model toView:instance];
+	[instance bindToModel:model];
 	
 	XCTAssertEqual(index, instance.selectedSegmentIndex, @"The selected segment index should be the same as the corresponding codes index");
 	XCTAssertEqualObjects(self.codes[index], [instance titleForSegmentAtIndex:instance.selectedSegmentIndex], @"The label at the selected index should match the code at that index.");
@@ -77,7 +76,7 @@
 	UIBoundSegmentedControl* instance = [self findSegmentedControlIn:container];
 	instance.fieldName = @"testProp";
 	
-	[UIBindingManager bindModel:model toView:instance];
+	[instance bindToModel:model];
 	
 	XCTAssertEqual(index, instance.selectedSegmentIndex, @"The selected segment index should be the same as the corresponding codes index");
 	XCTAssertEqualObjects(self.codes[index], [instance titleForSegmentAtIndex:instance.selectedSegmentIndex], @"The label at the selected index should match the code at that index.");

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIBoundField.h"
+#import "UIBoundView.h"
 
-@interface UIBoundLabel : UILabel<UIBoundField>
+@interface UIBoundLabel : UILabel<UIBoundView>
+@property NSString * negativeFormat;
 @end

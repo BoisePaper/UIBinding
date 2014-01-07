@@ -89,13 +89,10 @@
 	model.number = [NSNumber numberWithFloat:-100.0];
 	[self.label bindToModel:model];
 	XCTAssertEqualObjects(@"-100.00", self.label.text);
-
-	model = [[MyTopLevelClass alloc]init];
-	model.number = [NSNumber numberWithFloat:-1000.0];
-
-	self.label.format=@"###,#00.00";
+	
+	self.label.negativeFormat = @"(###,000.00)";
 	[self.label bindToModel:model];
-	XCTAssertEqualObjects(@"(1,000.00)", self.label.text);
+	XCTAssertEqualObjects(@"(100.00)", self.label.text);
 	
 }
 
