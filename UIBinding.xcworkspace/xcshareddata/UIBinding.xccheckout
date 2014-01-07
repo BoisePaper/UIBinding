@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>94028155-3735-4A23-93EE-73269EF38EC6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UIBinding</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>72365B48-6DE7-4F1C-84B7-22EE6EF9A17B</key>
+		<string>https://github.com/BoisePaper/UIBinding.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UIBinding.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>72365B48-6DE7-4F1C-84B7-22EE6EF9A17B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BoisePaper/UIBinding.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>72365B48-6DE7-4F1C-84B7-22EE6EF9A17B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72365B48-6DE7-4F1C-84B7-22EE6EF9A17B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIBinding</string>
+		</dict>
+	</array>
+</dict>
+</plist>

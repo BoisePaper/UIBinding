@@ -1,4 +1,4 @@
 language: objective-c
 xcode_sdk: iphonesimulator
-xcode_project: UIBinding.xcodeproj 
+xcode_workspace: UIBinding.xcodeworkspace 
 xcode_scheme: UIBinding

@@ -19,14 +19,13 @@
 		4F46005A1873308F00F6659C /* UIBoundLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4600551873308F00F6659C /* UIBoundLabel.m */; };
 		4F46005B1873308F00F6659C /* UIBoundTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4600571873308F00F6659C /* UIBoundTextField.m */; };
 		4F46005E1873608900F6659C /* UIBoundLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F46005D1873608900F6659C /* UIBoundLabelTests.m */; };
+		50907458187CC3F9007EDA70 /* UIBoundSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */; };
+		50907459187CC3FF007EDA70 /* UIBoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */; };
 		50DF09F3187C6B4100285B35 /* UIBindingManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DF09F2187C6B4100285B35 /* UIBindingManagerTests.m */; };
-		50FD4CA318761BF40053ADA5 /* UIBoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */; };
-		50FD4CA418761BF40053ADA5 /* UIBoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */; };
-		50FD4CA518761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */; };
-		50FD4CA618761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */; };
 		50FD4CA818761D730053ADA5 /* UIBoundSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA718761D730053ADA5 /* UIBoundSwitchTests.m */; };
 		50FD4CAA1876F9F90053ADA5 /* UIBoundSegmentedControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA91876F9F90053ADA5 /* UIBoundSegmentedControlTests.m */; };
 		50FD4CAC187704510053ADA5 /* SegmentedControlTesting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */; };
+		FFCE20237AFB41A58CA53006 /* libPods-UIBindingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7FFDF4C87B475C9EAA24D4 /* libPods-UIBindingTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0FCFA0A72A024E09A4C10772 /* Pods-UIBindingTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBindingTests.xcconfig"; path = "Pods/Pods-UIBindingTests.xcconfig"; sourceTree = "<group>"; };
 		4F4600251873293D00F6659C /* libUIBinding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIBinding.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4600281873293D00F6659C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F46002C1873293D00F6659C /* UIBinding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIBinding-Prefix.pch"; path = "../Classes/UIBinding-Prefix.pch"; sourceTree = "<group>"; };
@@ -81,6 +81,7 @@
 		50FD4CA718761D730053ADA5 /* UIBoundSwitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSwitchTests.m; sourceTree = "<group>"; };
 		50FD4CA91876F9F90053ADA5 /* UIBoundSegmentedControlTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSegmentedControlTests.m; sourceTree = "<group>"; };
 		50FD4CAB187704510053ADA5 /* SegmentedControlTesting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControlTesting.xib; sourceTree = "<group>"; };
+		CC7FFDF4C87B475C9EAA24D4 /* libPods-UIBindingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIBindingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 				4F46003D1873293D00F6659C /* libUIBinding.a in Frameworks */,
 				4F46003A1873293D00F6659C /* UIKit.framework in Frameworks */,
 				4F4600381873293D00F6659C /* Foundation.framework in Frameworks */,
+				FFCE20237AFB41A58CA53006 /* libPods-UIBindingTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +116,7 @@
 				4F46003E1873293D00F6659C /* UIBindingTests */,
 				4F4600271873293D00F6659C /* Frameworks */,
 				4F4600261873293D00F6659C /* Products */,
+				0FCFA0A72A024E09A4C10772 /* Pods-UIBindingTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +135,7 @@
 				4F4600281873293D00F6659C /* Foundation.framework */,
 				4F4600361873293D00F6659C /* XCTest.framework */,
 				4F4600391873293D00F6659C /* UIKit.framework */,
+				CC7FFDF4C87B475C9EAA24D4 /* libPods-UIBindingTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F46004B1873293D00F6659C /* Build configuration list for PBXNativeTarget "UIBindingTests" */;
 			buildPhases = (
+				9C469D4C78E64E9A909C5F27 /* Check Pods Manifest.lock */,
 				4F4600311873293D00F6659C /* Sources */,
 				4F4600321873293D00F6659C /* Frameworks */,
 				4F4600331873293D00F6659C /* Resources */,
+				67C30C17DF1342209AE5DDA6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,16 +272,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67C30C17DF1342209AE5DDA6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-UIBindingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C469D4C78E64E9A909C5F27 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F4600211873293D00F6659C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50907459187CC3FF007EDA70 /* UIBoundSwitch.m in Sources */,
+				50907458187CC3F9007EDA70 /* UIBoundSegmentedControl.m in Sources */,
 				4F46005B1873308F00F6659C /* UIBoundTextField.m in Sources */,
 				4F4600591873308F00F6659C /* UIBoundDatePicker.m in Sources */,
 				4F46005A1873308F00F6659C /* UIBoundLabel.m in Sources */,
-				50FD4CA618761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */,
-				50FD4CA418761BF40053ADA5 /* UIBoundSwitch.m in Sources */,
 				4F4600581873308F00F6659C /* UIBindingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,13 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50FD4CA318761BF40053ADA5 /* UIBoundSwitch.m in Sources */,
 				50DF09F3187C6B4100285B35 /* UIBindingManagerTests.m in Sources */,
 				50FD4CAA1876F9F90053ADA5 /* UIBoundSegmentedControlTests.m in Sources */,
 				4F4600451873293D00F6659C /* UIBindingTests.m in Sources */,
 				50FD4CA818761D730053ADA5 /* UIBoundSwitchTests.m in Sources */,
 				4F46005E1873608900F6659C /* UIBoundLabelTests.m in Sources */,
-				50FD4CA518761BF40053ADA5 /* UIBoundSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +449,7 @@
 		};
 		4F46004C1873293D00F6659C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCFA0A72A024E09A4C10772 /* Pods-UIBindingTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -433,6 +471,7 @@
 		};
 		4F46004D1873293D00F6659C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCFA0A72A024E09A4C10772 /* Pods-UIBindingTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
