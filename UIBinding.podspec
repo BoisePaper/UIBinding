@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.deployment_target     = '6.0'
-  s.dependency	  'OCMockito', '~> 1.0'
   s.source_files  = 'Classes'
   s.requires_arc  = true
 
