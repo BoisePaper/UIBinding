@@ -1,5 +1,5 @@
 rvm: 1.9.3
 language: objective-c
 xcode_sdk: iphonesimulator
-xcode_workspace: UIBinding.xcodeworkspace 
+xcode_workspace: UIBinding.xcworkspace 
 xcode_scheme: UIBinding
