@@ -56,7 +56,8 @@
 	}
 	else
 	{
-		self.text = [NSString stringWithFormat:@"%@", modelValue];
+		NSString* code = [NSString stringWithFormat:@"%@", modelValue];
+		self.text = NSLocalizedString(code, @"Localized bound text field");
 	}
 
 }
