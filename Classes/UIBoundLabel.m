@@ -46,7 +46,9 @@
 
 -(void) setTextWithModelValue:(NSObject *) modelValue
 {
-	if(self.format != nil && [modelValue isKindOfClass:[NSNumber class]])
+	if(modelValue == nil || [modelValue isKindOfClass:[NSNull class]]) {
+		self.text = @"";
+	} else if(self.format != nil && [modelValue isKindOfClass:[NSNumber class]])
 	{
 		self.text = [self formattedStringFromNumber:(NSNumber*)modelValue];
 	}
@@ -95,10 +97,8 @@
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
 	if([keyPath isEqualToString:self.fieldName]) {
-		NSString* newVal = change[NSKeyValueChangeNewKey];
-		if(![newVal isEqualToString:self.text]) {
-			self.text = newVal;
-		}
+		NSObject* newVal = change[NSKeyValueChangeNewKey];
+		[self setTextWithModelValue:newVal];
 	}
 }
 

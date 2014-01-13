@@ -19,6 +19,8 @@
 		4F46005A1873308F00F6659C /* UIBoundLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4600551873308F00F6659C /* UIBoundLabel.m */; };
 		4F46005B1873308F00F6659C /* UIBoundTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4600571873308F00F6659C /* UIBoundTextField.m */; };
 		4F46005E1873608900F6659C /* UIBoundLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F46005D1873608900F6659C /* UIBoundLabelTests.m */; };
+		5025A72A18849B5F00F0BD64 /* UIBoundStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025A72918849B5F00F0BD64 /* UIBoundStepper.m */; };
+		5025A72B18849B5F00F0BD64 /* UIBoundStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025A72918849B5F00F0BD64 /* UIBoundStepper.m */; };
 		50907458187CC3F9007EDA70 /* UIBoundSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA218761BF40053ADA5 /* UIBoundSegmentedControl.m */; };
 		50907459187CC3FF007EDA70 /* UIBoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */; };
 		50DF09F3187C6B4100285B35 /* UIBindingManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DF09F2187C6B4100285B35 /* UIBindingManagerTests.m */; };
@@ -73,6 +75,8 @@
 		4F4600571873308F00F6659C /* UIBoundTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundTextField.m; sourceTree = "<group>"; };
 		4F46005C1873452600F6659C /* UIBinding.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIBinding.podspec; sourceTree = "<group>"; };
 		4F46005D1873608900F6659C /* UIBoundLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundLabelTests.m; sourceTree = "<group>"; };
+		5025A72818849B5F00F0BD64 /* UIBoundStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBoundStepper.h; sourceTree = "<group>"; };
+		5025A72918849B5F00F0BD64 /* UIBoundStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundStepper.m; sourceTree = "<group>"; };
 		50DF09F2187C6B4100285B35 /* UIBindingManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBindingManagerTests.m; sourceTree = "<group>"; };
 		50FD4C9F18761BF40053ADA5 /* UIBoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBoundSwitch.h; sourceTree = "<group>"; };
 		50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBoundSwitch.m; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 		4F46002A1873293D00F6659C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5025A72818849B5F00F0BD64 /* UIBoundStepper.h */,
+				5025A72918849B5F00F0BD64 /* UIBoundStepper.m */,
 				50FD4C9F18761BF40053ADA5 /* UIBoundSwitch.h */,
 				50FD4CA018761BF40053ADA5 /* UIBoundSwitch.m */,
 				50FD4CA118761BF40053ADA5 /* UIBoundSegmentedControl.h */,
@@ -315,6 +321,7 @@
 				4F46005B1873308F00F6659C /* UIBoundTextField.m in Sources */,
 				4F4600591873308F00F6659C /* UIBoundDatePicker.m in Sources */,
 				4F46005A1873308F00F6659C /* UIBoundLabel.m in Sources */,
+				5025A72B18849B5F00F0BD64 /* UIBoundStepper.m in Sources */,
 				4F4600581873308F00F6659C /* UIBindingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5025A72A18849B5F00F0BD64 /* UIBoundStepper.m in Sources */,
 				50DF09F3187C6B4100285B35 /* UIBindingManagerTests.m in Sources */,
 				50FD4CAA1876F9F90053ADA5 /* UIBoundSegmentedControlTests.m in Sources */,
 				4F4600451873293D00F6659C /* UIBindingTests.m in Sources */,

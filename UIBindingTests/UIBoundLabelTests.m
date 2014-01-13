@@ -115,6 +115,32 @@
 	
 }
 
+- (void) testNumberUpdatingModel
+{
+	MyTopLevelClass* model = [[MyTopLevelClass alloc] init];
+	model.number = @1;
+	
+	UIBoundLabel* instance = [[UIBoundLabel alloc] init];
+	instance.fieldName = @"number";
+	instance.format = @"###0";
+	[instance bindToModel:model];
+	XCTAssertEqualObjects(@"1", instance.text, @"The the label should be '1'");
+	
+	model.number = @3;
+	XCTAssertEqualObjects(@"3", instance.text, @"The the label should be '3'");
+	
+}
 
+- (void) testNullValueShouldReturnEmpty
+{
+	MyTopLevelClass* model = [[MyTopLevelClass alloc] init];
+	model.number = nil;
+	
+	UIBoundLabel* instance = [[UIBoundLabel alloc] init];
+	instance.fieldName = @"number";
+	instance.format = @"###0";
+	[instance bindToModel:model];
+	XCTAssertEqualObjects(@"", instance.text, @"The the label should be empty");
+}
 
 @end
